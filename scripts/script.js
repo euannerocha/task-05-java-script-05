@@ -122,11 +122,14 @@ function sorteia(tempo, velocidade) {
 
 
 function pausaSorteio() {
+    
+    let button04 = document.getElementById("button04");
+    button04.innerText = "Sortear!";
 
-    button04.innerText = "Sortear!"
     button04.onclick = iniciaSorteio;
     
     clearInterval(intervaloNomes);
+
 }
 
 //ATIVIDADE 05
