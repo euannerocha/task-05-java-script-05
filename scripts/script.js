@@ -4,7 +4,7 @@ function mostraAlerta() {
 
     let button01 = document.getElementById("button01");
 
-    ancoraButton.innerText = "Aguarde...";
+    button01.innerText = "Aguarde...";
     setTimeout(() => {
         alert("Identificamos uma falha na Matrix! Veja sua conexão imediatamente!");
         button01.innerText = "Pronto!";
@@ -68,7 +68,7 @@ function mudanca() {
 
     let pArcoIris = document.getElementById("pArcoIris");
 
-    let coresAleatorias = Math.floor(Math.random() * colors.length);
+    let coresAleatorias = Math.floor(Math.random() * cores.length);
     let corAleatoria = cores[coresAleatorias];
     pArcoIris.style.color = corAleatoria;
 
@@ -177,7 +177,7 @@ async function renderizaPokemons(name = "") {
                 </li>
             `)
         })
-    }
+    } 
 }
 
 renderizaPokemons()
