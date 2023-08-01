@@ -1,0 +1,78 @@
+body{
+    padding: 25px;
+    background-color: var(--black);
+    color: var(--white);
+}
+
+body>main>ul>li{
+    list-style: none;
+    align-self: center;
+}
+
+.disponiveis{
+    font-family: 'Orbitron', sans-serif;
+    font-size: 1.2rem;
+    margin-top: 30px;
+    text-align: center;
+}
+
+.pesquise{
+    font-family: 'Orbitron', sans-serif;
+    text-align: center;
+    font-size: 1.2rem;
+    margin-top: 30px;
+}
+
+.divSearch{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+body>main>ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;    
+}
+
+.aVoltar{
+    text-decoration: none;
+    color: var(--white);
+    background-color: var(--primary);
+    padding: 7px;
+    border-radius: var(--border-radius-default);
+    cursor: pointer;
+}
+
+.irMissao{
+    background-color: var(--primary);
+    cursor: pointer;
+    border-radius: var(--border-radius-default);
+    border: none;
+    padding: 2px;
+    color: var(--white);
+}
+.irMissao:hover{
+    background-color: var(--primary-hover);
+}
+
+.inputBusca{
+    border-radius: var(--border-radius-default);
+    padding: 2px;
+    border: var(--primary-hover);
+}
+
+.headerPoke{
+    display: flex;
+    justify-content: space-between;
+}
+
+.saira{
+    background-color: var(--backline-red-transparent);
+}
+.saira:hover{
+    background-color: var(--backline-red);
+}

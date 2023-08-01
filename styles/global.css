@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Didact+Gothic&family=Orbitron:wght@400;500;600;700;800;900&display=swap');
+
+
+:root{
+    --primary: #00B100;
+    --primary-hover: #006100;
+    --backline-red:#E9372B; 
+    --backline-red-transparent:hsla(4, 81%, 54%, 0.8); 
+    --backline-blue: #2134AA;
+    --backline-blue-transparent: hsla(232, 67%, 40%, 0.8);
+    --black: #000000;
+    --black-transparent: hsla(0, 0%, 0%, 0.8);
+    --white: #f2f2f2;
+    --white-transparent: rgba(242, 242, 242, 0.80);
+
+    --border-radius-default: 4px;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Didact Gothic', sans-serif;
+  }
+
+  canvas {
+    display: block;
+    position: relative;
+}

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script defer src="../scripts/scriptStyle.js"></script>
+    <script src="../scripts/script.js"></script>
+    <link rel="shortcut icon" href="../assets/favicon-padrao.png" type="image/x-icon">
+    <link rel="stylesheet" href="../styles/global.css">
+    <link rel="stylesheet" href="../styles/red.css">
+    <link rel="stylesheet" href="../styles/matrix.css">
+    <title>MATRIX</title>
+</head>
+
+<body>
+
+    <canvas id="matrix"></canvas>
+
+    <main>
+        <div class="container">
+            <h1 class="tituloMatrix">Sala das missões</h1>
+            <p class="textoMatrix">Role a tela para baixo e confira as missões!</p>
+
+            <div class="containerDivCards row row-cols-1 row-cols-md-2 g-4">
+
+                <div class="col">
+                    <div class="cardMissaoBranco card">
+                        <div class="card-body">
+                            <h5 class="card-title">Missão 01 - Oráculo</h5>
+                            <p class="card-text">Aqui, a missão é: utilizar a programação assíncrona!</p>
+                            <button id="button01" class="irMissao" onclick="mostraAlerta()">Verificar missão</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="cardMissaoBranco card">
+                        <div class="card-body">
+                            <h5 class="card-title">Missão 02 - Trinity</h5>
+                            <p class="card-text">Hora em tempo real (tic, tac, tic...)</p>
+                            <p style="display: none;" id="relogio"></p>
+                            <button id="button02" class="irMissao" onclick="iniciaRelogio()">Iniciar relógio</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="cardMissaoBranco card">
+                        <div class="card-body">
+                            <h5 class="card-title">Missão 03 - Morpheus</h5>
+                            <p id="pArcoIris" class="card-text">Mais que um arco-íris pra você!</p>
+                            <button id="button03" class="irMissao" onclick="mudaCor()">Ver cores!</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="cardMissaoBranco card">
+                        <div class="card-body">
+                            <h5 class="card-title">Missão 04 - Apoc</h5>
+                            <p class="card-text">Automatizando um sorteio de nomes!</p>
+                            <div class="grupoInputMatrix input-group mb-3">
+
+                                <div>
+                                    <span class="input-group-text" id="inputGroup-sizing-default">Tempo</span>
+                                    <input placeholder="Ex.: 1000" id="inputTempo" type="text" class="inputMatrix form-control"
+                                        aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+                                </div>
+
+                                <div>
+                                    <span class="input-group-text" id="inputGroup-sizing-default">Velocidade</span>
+                                    <input placeholder="Ex.: 1000" id="inputVelocidade" type="text" class="inputMatrix form-control"
+                                        aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+                                </div>
+                            </div>
+                            <button id="button04" class="irMissao" onclick="iniciaSorteio()">Sortear!</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="cardMissaoBranco card">
+                        <div class="card-body">
+                            <h5 class="card-title">Missão 05 - Neo</h5>
+                            <p class="card-text">Clique para consumir a API e escolher seu Pokemon!</p>
+                            <button onclick="location.href = './poke.html'" id="button04" class="irMissao">Ir para
+                                Missão!</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="divSair">
+                <button class="sair irMissao" onclick="location.href = '../index.html'">Sair</button>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
